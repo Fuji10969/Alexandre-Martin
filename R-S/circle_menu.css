@@ -1,0 +1,201 @@
+#skills {
+  display: flex;
+  width: 100%;
+  height: 70vh;
+  background-color: rgb(219, 219, 219);
+}
+
+#skills h3 {
+  margin-bottom: 0.5rem;
+}
+
+#menu {
+  width: 20%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#menu li {
+  position: absolute;
+  list-style: none;
+  margin-right: 13rem;
+  transform-origin: 130px;
+  transition: 0.6s;
+  transform: rotate(0deg) translateX(105px);
+}
+
+#menu li button {
+  height: 55px;
+  width: 55px;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 50%;
+  transform: rotate(calc(360deg / -8 * var(--i)));
+  box-shadow: 0 3px 4px rgba(0, 0, 0, 0.15);
+
+  border: none;
+  cursor: pointer;
+}
+
+#menu li button ion-icon,
+i {
+  font-size: 22px;
+}
+
+#menu li:nth-child(1) button {
+  color: rgb(255, 119, 0);
+  background: rgb(255, 255, 255);
+}
+
+#menu li:nth-child(2) button {
+  color: rgb(0, 4, 255);
+  background: rgb(255, 255, 255);
+}
+#menu li:nth-child(3) button {
+  color: rgb(255, 230, 0);
+  background: rgb(255, 255, 255);
+}
+#menu li:nth-child(4) button {
+  color: rgb(255, 119, 0);
+  background: rgb(255, 255, 255);
+}
+
+#menu li:nth-child(5) button {
+  color: #7451eb;
+  background: rgb(255, 255, 255);
+}
+
+#menu li:nth-child(6) button {
+  color: rgb(247, 125, 11);
+  background: rgb(255, 255, 255);
+}
+
+#menu li:nth-child(7) button {
+  color: rgb(247, 125, 11);
+  background: rgb(255, 255, 255);
+}
+
+#menu li:nth-child(8) button {
+  color: rgb(0, 0, 0);
+  background: rgb(255, 255, 255);
+}
+
+#menu li button:hover {
+  color: white;
+  background-color: rgb(58, 58, 58);
+}
+
+#menu.active li {
+  transform: rotate(calc(360deg / 8 * var(--i)));
+}
+
+.toggle {
+  position: absolute;
+  width: 60px;
+  height: 60px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 50%;
+  cursor: pointer;
+  box-shadow: 0 0px 4px rgba(0, 0, 0, 0.15);
+  font-size: 2em;
+  background: #7451eb;
+  color: white;
+  transition: 0.3s;
+}
+
+#menu.active .toggle {
+  transform: rotate(135deg);
+  background: rgb(0, 0, 0);
+  color: white;
+}
+
+/***************************************************************************************Skills_one*/
+#skills_one {
+  height: 100%;
+  width: 40%;
+  transition: 0.4s;
+}
+
+#skills_one.active {
+  width: 20%;
+}
+/***************************************************************************************Skills_two*/
+
+#skills_two {
+  height: 100%;
+  width: 40%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.skills_two {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 40%;
+  height: 40%;
+  position: absolute;
+  opacity: 0;
+  pointer-events: none;
+}
+
+#skills_two_1.active {
+  opacity: 1;
+  transition: 0.5s;
+}
+
+#skills_two_2.active {
+  opacity: 1;
+  transition: 0.5s;
+}
+#skills_two_3.active {
+  opacity: 1;
+  transition: 0.5s;
+}
+#skills_two_4.active {
+  opacity: 1;
+  transition: 0.5s;
+}
+#skills_two_5.active {
+  opacity: 1;
+  transition: 0.5s;
+}
+#skills_two_6.active {
+  opacity: 1;
+  transition: 0.5s;
+}
+#skills_two_7.active {
+  opacity: 1;
+  transition: 0.5s;
+}
+#skills_two_8.active {
+  opacity: 1;
+  transition: 0.5s;
+}
+
+/**************************************** Circle_menu Responsive*/
+
+@media screen and (max-width: 1150px) {
+  #skills {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 85vh;
+  }
+
+  #skills_one {
+    height: 100%;
+    transition: 0.4s;
+  }
+
+  #skills_one.active {
+    height: 0%;
+  }
+}
