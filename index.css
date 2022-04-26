@@ -13,6 +13,7 @@ body {
 
 .la_page {
   flex: 1 0 auto;
+  overflow-y: hidden;
 }
 
 #scroll_top {
