@@ -424,7 +424,7 @@ nav img {
   height: 100vh;
   background-color: rgb(245, 245, 245);
   display: flex;
-  /* overflow-x: hidden; */
+  overflow-x: hidden;
 }
 
 #veille {
@@ -461,7 +461,12 @@ nav img {
 
 #veille.active2 h3 {
   opacity: 0;
-  transition: 0.8s;
+  transition: 0.7s;
+}
+
+#veille.active2 button {
+  opacity: 0;
+  transition: 0.7s;
 }
 
 #veille_slide {
@@ -529,7 +534,12 @@ nav img {
 
 #stage.active2 h3 {
   opacity: 0;
-  transition: 0.8s;
+  transition: 0.7s;
+}
+
+#stage.active2 button {
+  opacity: 0;
+  transition: 0.7s;
 }
 
 #stage.active2 button:nth-child(1) {
