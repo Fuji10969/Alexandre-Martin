@@ -4,6 +4,7 @@
   justify-content: center;
   align-items: center;
   overflow: hidden;
+  background-color: white;
 }
 
 .veille_slide img {
@@ -56,6 +57,7 @@
   justify-content: center;
   align-items: center;
   overflow: hidden;
+  background-color: white;
 }
 
 .stage_slide img {

@@ -9,6 +9,7 @@
 body {
   display: flex;
   flex-direction: column;
+  overflow-x: hidden;
 }
 
 .la_page {
@@ -458,6 +459,11 @@ nav img {
   transition: 1s;
 }
 
+#veille.active2 h3 {
+  opacity: 0;
+  transition: 0.8s;
+}
+
 #veille_slide {
   position: absolute;
   pointer-events: none;
@@ -519,6 +525,11 @@ nav img {
   opacity: 0;
   overflow: hidden;
   transition: 1s;
+}
+
+#stage.active2 h3 {
+  opacity: 0;
+  transition: 0.8s;
 }
 
 #stage.active2 button:nth-child(1) {
