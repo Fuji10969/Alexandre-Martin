@@ -504,7 +504,6 @@ nav img {
   width: 100%;
   pointer-events: all;
   opacity: 1;
-  background: blue;
   transition-delay: 0.9s;
   transition-duration: 0.5s;
 }

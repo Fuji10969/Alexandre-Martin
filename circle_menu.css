@@ -146,6 +146,10 @@ i {
   pointer-events: none;
 }
 
+/* #menu li:nth-child(6) button {
+  background-color: rgb(58, 58, 58);
+} */
+
 #skills_two_1.active {
   opacity: 1;
   transition: 0.5s;
@@ -187,7 +191,7 @@ i {
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    height: 85vh;
+    height: 500px;
   }
 
   #skills_one {
@@ -196,6 +200,6 @@ i {
   }
 
   #skills_one.active {
-    height: 0%;
+    height: 100px;
   }
 }

@@ -47,3 +47,55 @@
 .precedent {
   left: 1rem;
 }
+
+/**********************************************************/
+
+#stage_slide {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
+}
+
+.stage_slide img {
+  height: 100%;
+  width: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  object-fit: cover;
+  opacity: 0;
+  transition: opacity 0.5s;
+}
+
+.stage_slide img.active {
+  opacity: 1;
+}
+
+.stage_slide button {
+  position: absolute;
+  z-index: 1;
+  top: 0;
+  left: 0;
+}
+
+.suivant2,
+.precedent2 {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  height: 2rem;
+  width: 2rem;
+  background-color: aqua;
+  cursor: pointer;
+  z-index: 1;
+}
+
+.suivant2 {
+  right: 1rem;
+}
+
+.precedent2 {
+  left: 1rem;
+}

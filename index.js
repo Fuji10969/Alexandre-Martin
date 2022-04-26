@@ -284,7 +284,7 @@ function send_mail() {
   emailjs.send("service_0u5ui0c", "template_2e5bguq", tempParams);
 }
 
-/**********************************************************************Slide*/
+/**********************************************************************Slide Veille*/
 
 let img_slider = document.getElementsByClassName("slide_veille_js");
 let position = 0;
@@ -315,4 +315,37 @@ precedent.addEventListener("click", function () {
   }
   remove_veille_img();
   img_slider[position].classList.add("active");
+});
+
+/**********************************************************************Slide Stage*/
+
+let img_slider2 = document.getElementsByClassName("slide_veille_js2");
+let position2 = 0;
+let nbr_img2 = img_slider2.length;
+
+let precedent2 = document.querySelector(".precedent2");
+let suivant2 = document.querySelector(".suivant2");
+
+function remove_veille_img() {
+  for (let i = 0; i < nbr_img2; i++) {
+    img_slider2[i].classList.remove("active");
+  }
+}
+
+suivant2.addEventListener("click", function () {
+  position2++;
+  if (position2 >= nbr_img2) {
+    position2 = 0;
+  }
+  remove_veille_img();
+  img_slider2[position2].classList.add("active");
+});
+
+precedent2.addEventListener("click", function () {
+  position2--;
+  if (position2 < 0) {
+    position2 = nbr_img2 - 1;
+  }
+  remove_veille_img();
+  img_slider2[position2].classList.add("active");
 });

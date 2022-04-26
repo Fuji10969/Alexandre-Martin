@@ -14,11 +14,13 @@
   width: 2px;
   height: 100%;
   background-color: #2f363e;
-  left: calc(50% - 1px);
+  left: calc(50.2%);
 }
+
 .timeline-item {
   margin-bottom: 50px;
   margin-right: 5px;
+  margin-left: 5px;
   width: 100%;
   position: relative;
 }
@@ -35,7 +37,7 @@
   width: 16px;
   background-color: #7451eb;
   position: absolute;
-  left: calc(50.3% - 8px);
+  left: calc(50.4% - 8px);
   border-radius: 50%;
   top: 100px;
 }
@@ -73,7 +75,7 @@
   }
 
   .timeline-items::before {
-    left: 7px;
+    left: 12px;
   }
   .timeline-item:nth-child(odd) {
     padding-right: 0;
@@ -144,6 +146,7 @@
 .verso p {
   text-align: center;
   width: 100%;
+  padding: 0 3px 0 3px;
   height: 95px;
   color: white;
 }
