@@ -156,7 +156,7 @@ nav img {
     justify-content: center;
 
     top: 10vh;
-    width: 100%;
+    width: 100vw;
     height: 0vh;
     background-color: rgba(87, 87, 87, 0.8);
     pointer-events: none;
@@ -461,12 +461,12 @@ nav img {
 
 #veille.active2 h3 {
   opacity: 0;
-  transition: 0.7s;
+  transition: 0.5s;
 }
 
 #veille.active2 button {
   opacity: 0;
-  transition: 0.7s;
+  transition: 0.5s;
 }
 
 #veille_slide {
@@ -534,12 +534,12 @@ nav img {
 
 #stage.active2 h3 {
   opacity: 0;
-  transition: 0.7s;
+  transition: 0.5s;
 }
 
 #stage.active2 button {
   opacity: 0;
-  transition: 0.7s;
+  transition: 0.5s;
 }
 
 #stage.active2 button:nth-child(1) {
