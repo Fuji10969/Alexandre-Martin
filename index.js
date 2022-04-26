@@ -326,9 +326,9 @@ let nbr_img2 = img_slider2.length;
 let precedent2 = document.querySelector(".precedent2");
 let suivant2 = document.querySelector(".suivant2");
 
-function remove_veille_img() {
-  for (let i = 0; i < nbr_img2; i++) {
-    img_slider2[i].classList.remove("active");
+function remove_stage_img() {
+  for (let k = 0; k < nbr_img2; k++) {
+    img_slider2[k].classList.remove("active");
   }
 }
 
@@ -337,7 +337,7 @@ suivant2.addEventListener("click", function () {
   if (position2 >= nbr_img2) {
     position2 = 0;
   }
-  remove_veille_img();
+  remove_stage_img();
   img_slider2[position2].classList.add("active");
 });
 
@@ -346,6 +346,6 @@ precedent2.addEventListener("click", function () {
   if (position2 < 0) {
     position2 = nbr_img2 - 1;
   }
-  remove_veille_img();
+  remove_stage_img();
   img_slider2[position2].classList.add("active");
 });
