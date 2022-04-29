@@ -9,12 +9,12 @@
 body {
   display: flex;
   flex-direction: column;
-  overflow-x: hidden;
 }
 
 .la_page {
   flex: 1 0 auto;
   overflow-y: hidden;
+  overflow-x: hidden;
 }
 
 #scroll_top {
