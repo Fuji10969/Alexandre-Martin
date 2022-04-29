@@ -241,9 +241,11 @@ function clickHandler(e) {
 function contact() {
   let contact = document.querySelector(".contact_form");
   let contact_wrap = document.querySelector("#contact_wrap");
+  let contact_content = document.querySelector(".container");
   contact.classList.toggle("active");
   contact_wrap.classList.toggle("active");
 }
+/**********************************************************************contact*/
 
 function stage() {
   let stage = document.querySelector("#stage");
@@ -271,17 +273,6 @@ function veille_remove() {
   let stage = document.querySelector("#stage");
   veille.classList.remove("active1");
   stage.classList.remove("active2");
-}
-
-/**********************************************************************Mail*/
-function send_mail() {
-  var tempParams = {
-    from_object: document.getElementById("objet").value,
-    from_email: document.getElementById("email").value,
-    message: document.getElementById("message").value,
-  };
-
-  emailjs.send("service_0u5ui0c", "template_2e5bguq", tempParams);
 }
 
 /**********************************************************************Slide Veille*/
@@ -349,3 +340,63 @@ precedent2.addEventListener("click", function () {
   remove_stage_img();
   img_slider2[position2].classList.add("active");
 });
+
+/**********************************************************************Mail*/
+const nameContact = document.querySelector("#name_contact");
+const email = document.querySelector("#email");
+const message = document.querySelector("#message");
+const success = document.querySelector("#success");
+const errorNodes = document.querySelectorAll(".error");
+
+function send_mail() {
+  var tempParams = {
+    from_name: document.getElementById("name_contact").value,
+    from_email: document.getElementById("email").value,
+    message: document.getElementById("message").value,
+  };
+
+  emailjs.send("service_0u5ui0c", "template_2e5bguq", tempParams);
+}
+
+function validateForm() {
+  clearMessage();
+  let errorFlag = false;
+
+  if (nameContact.value.length < 1) {
+    errorNodes[0].innerText = "Le champ ne peut être vide";
+    nameContact.classList.add("error-border");
+    errorFlag = true;
+  }
+
+  if (!emailIsValid(email.value)) {
+    errorNodes[1].innerText = "Email non valide";
+    email.classList.add("error-border");
+    errorFlag = true;
+  }
+
+  if (message.value.length < 1) {
+    errorNodes[2].innerText = "Veuillez écrire un message";
+    message.classList.add("error-border");
+    errorFlag = true;
+  }
+
+  if (!errorFlag) {
+    success.innerText = "Message envoyé";
+    send_mail();
+  }
+}
+
+function clearMessage() {
+  for (let i = 0; i < errorNodes.length; i++) {
+    errorNodes[i].innerText = "";
+  }
+  success.innerText = "";
+  nameContact.classList.remove("error-border");
+  email.classList.remove("error-border");
+  message.classList.remove("error-border");
+}
+
+function emailIsValid(email) {
+  let pattern = /\S+@\S+\.\S+/;
+  return pattern.test(email);
+}

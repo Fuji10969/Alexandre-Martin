@@ -9,16 +9,15 @@
   </head>
   <body>
     <div class="contact_form">
-      <div class="contact_box">
+      <div class="contact_box" id="message_contact">
         <div class="left"></div>
         <div class="right">
           <h2>Pour me contacter</h2>
-          <input type="text" class="field" placeholder="Nom" />
-          <input type="text" class="field" placeholder="Prénom" />
-          <input type="text" class="field" placeholder="E-mail" />
-          <textarea class="field" placeholder="Message"></textarea>
+          <input type="text" class="field" id="email" placeholder="E-mail" />
+          <input type="text" class="field" id="objet" placeholder="Objet" />
+          <textarea class="field" placeholder="Message" id="message"></textarea>
 
-          <a class="btn" href="mailto:alex.emile29@gmail.com">Envoyer</a>
+          <button onclick="send_mail()">Envoyer</button>
         </div>
       </div>
     </div>

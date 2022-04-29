@@ -24,7 +24,7 @@
             <a href="#timeline">Présentation</a>
             <a href="#skills">Skills</a>
             <a href="#projet">Projet</a>
-            <a href="#veille_stage">Veille / Satge</a>
+            <a href="#veille_stage">Veille / Stage</a>
             <a href="#footer">Contact</a>
           </div>
           <div id="nav3" onclick=" navbarResponsive();">
@@ -72,7 +72,9 @@
               <div class="verso">
                 
                 <p>
-                 Après ma licence j'ai travaillé à <a href="https://brest.theroof.fr/" target="blank">The Roof Brest</a>.
+
+                 Après ma licence j'ai travaillé 1 an à <a href="https://brest.theroof.fr/" target="blank">The Roof Brest</a>.
+                 Finalement je me suis rendu compte que le monde du sport ne me convenait pas totalement. L'informatique m'ayant toujours intéréssé je me suis dit : "Pourquoi pas ?"
                 </p>
                 <button onclick="flip('b2');">
                   <ion-icon name="add-outline"></ion-icon>
@@ -110,9 +112,9 @@
             <div class="timeline-date">Demain</div>
             <div class="timeline-content" id="future">
               <div class="recto">
-                <h3>Licence Professionnelle</h3>
+                <h3>Licence 3 informatique</h3>
                 <p>
-                  Alternance
+                  Classique / Alternance
                 </p>
                 <button onclick="flip('b5');">
                   <ion-icon name="add-outline"></ion-icon>
@@ -121,7 +123,11 @@
 
               <div class="verso">
                 <p>
-                  Actuellement en BTS SIO - option SLAM, j'étudie les langages de programmation : C++, Java, Javascript, PHP, Python                </p>
+                  Pour me préparer concrètement au métier de Développeur web et ou d’application, 
+                  je suis à la recherche d’une formation qui me permettra de continuer à monter en 
+                  compétences dans le domaine de l'informatique.
+                  
+                </p>
                 <button onclick="flip('b6');">
                   <ion-icon name="add-outline"></ion-icon>
                 </button>
@@ -131,56 +137,7 @@
         </div>
       </section>
 
-      <!-- <section id="skills">
-        <div id="skills_one"></div>
-        <div id="menu">
-          <li style="--i: 0">
-            <button onclick="skill('s1');">
-              <ion-icon name="logo-html5"></ion-icon>
-            </button>
-          </li>
-          <li style="--i: 1">
-            <button onclick="skill('s2');">
-              <ion-icon name="logo-css3"></ion-icon>
-            </button>
-          </li>
-          <li style="--i: 2">
-            <button onclick=" skill('s3');">
-              <ion-icon name="logo-javascript"></ion-icon>
-            </button>
-          </li>
-          <li style="--i: 3">
-            <button onclick="skill('s4');">
-              <i class="fa-brands fa-java"></i>
-            </button>
-          </li>
-          <li style="--i: 4">
-            <button onclick=" skill('s5');">
-              <i class="fa-brands fa-php"></i>
-            </button>
-          </li>
-          <li style="--i: 5">
-            <button onclick=" skill('s6');">
-              <ion-icon name="help-outline"></ion-icon>
-            </button>
-          </li>
-          <li style="--i: 6">
-            <button onclick=" skill('s7');">
-              <ion-icon name="logo-gitlab"></ion-icon>
-            </button>
-          </li>
-          <li style="--i: 7">
-            <button onclick=" skill('s8');">
-              <ion-icon name="logo-github"></ion-icon>
-            </button>
-          </li>
-          <div class="toggle">
-            <ion-icon name="add-sharp"></ion-icon>
-          </div>
-        </div> -->
-
-
-        <section id="skills">
+         <section id="skills">
           <div id="skills_one"></div>
           <div id="menu">
             <li style="--i: 0">
@@ -236,6 +193,7 @@
               <li>Formation en BTS SIO option SLAM</li>
               <li>Projet Lafleur</li>
               <li>Portfolio</li>
+              <li class="level_skill"><div></div><div></div><div></div><div></div><div></div><div></div></li>
             </ul>
           </div>
           <div class="skills_two" id="skills_two_2">
@@ -245,6 +203,7 @@
               <li>Formation en BTS SIO option SLAM</li>
               <li>Utilisation dans divers projets</li>
               <li>Portfolio</li>
+              <li class="level_skill"><div></div><div></div><div></div><div></div><div></div><div></div></li>
             </ul>
           </div>
           <div class="skills_two" id="skills_two_3">
@@ -328,13 +287,13 @@
 
       <section id="veille_stage">
         <div id="veille">
-          <h3>Veille</h3>
+          <h3>Stage</h3>
 
           <button onclick="veille()" id="bouton_veille"></button>
           <div id="veille_slide" class="veille_slide">
-            <button onclick="veille_remove()">X</button>
-            <div class="precedent"></div>
-            <div class="suivant"></div>
+            <button onclick="veille_remove()" id="veille_slide_bouton"><ion-icon name="close-outline"></ion-icon></button>
+            <div class="precedent"><ion-icon name="caret-back-outline"></ion-icon></div>
+            <div class="suivant"><ion-icon name="caret-forward-outline"></ion-icon></div>
 
 
            <img src="images/slide_veille/1.jpg" class="slide_veille_js active">
@@ -347,13 +306,13 @@
         <div id="stage">
        
 
-            <h3>Stage</h3>
+            <h3>Veille  </h3>
 
             <button onclick="stage()" id="bouton_stage"></button>
             <div id="stage_slide" class="stage_slide">
-              <button onclick="stage_remove()">X</button>
-              <div class="precedent2"></div>
-              <div class="suivant2"></div>
+              <button onclick="stage_remove()" id="stage_slide_bouton"><ion-icon name="close-outline"></ion-icon></button>
+              <div class="precedent2"><ion-icon name="caret-back-outline"></ion-icon></div>
+              <div class="suivant2"><ion-icon name="caret-forward-outline"></ion-icon></div>
   
   
              <img src="images/veille_technologique/Diapositive1.JPG" class="slide_veille_js2 active">
@@ -380,22 +339,31 @@
       </button>
 
       <div class="contact_form">
-        <div class="contact_box" id="message_contact">
-          <div class="left"></div>
-          <div class="right">
-            <h2>Pour me contacter</h2>
-            <input type="text" class="field" id="email" placeholder="E-mail" />
-            <input type="text" class="field" id="objet" placeholder="Objet" />
-            <textarea
-              class="field"
-              placeholder="Message"
-              id="message"
-            ></textarea>
+       <div id="overlay">
+<form onsubmit="event.preventDefault(); validateForm()">
+  <h1>Envoyez moi un message</h1>
 
-            <button onclick="send_mail()">Envoyer</button>
-          </div>
-        </div>
-      </div>
+  <label for="nom">Nom : </label>
+  <input type="text" id="name_contact" placeholder="Votre nom">
+  <small class="error"></small>
+
+  <label for="nom">Email : </label>
+  <input type="text" id="email" placeholder="Votre email">
+  <small class="error"></small>
+
+  <label for="nom">Message : </label>
+  <textarea name="message" id="message" placeholder="Votre message" rows="6"></textarea>
+  <small class="error"></small>
+
+  <div class="center">
+    <input type="submit" value="Envoyez">
+    <p id="success"></p>
+  </div>
+
+
+</form>
+       </div>
+            </div>
 
       <div id="reseaux">
         <a href="#" target="blank"><i class="fa-brands fa-linkedin"></i></a>

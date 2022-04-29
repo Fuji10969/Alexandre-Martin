@@ -1,9 +1,9 @@
 {
   "folders": [
-	{
-		"path": "."
-	}
-],
+    {
+      "path": "."
+    }
+  ],
   "settings": {
     "java.project.sourcePaths": ["test.java/src"],
     "java.project.outputPath": "bin",

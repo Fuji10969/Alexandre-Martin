@@ -439,12 +439,16 @@ nav img {
   transition: 1s;
 }
 
-#veille button {
-  width: 5rem;
-  height: 5rem;
+#bouton_veille {
+  width: 8rem;
+  height: 8rem;
   border: none;
   cursor: pointer;
   background-color: #7451eb;
+  border-radius: 50%;
+  background: url(images/wordpress.png);
+
+  background-size: cover;
 }
 
 #veille.active1 {
@@ -497,12 +501,15 @@ nav img {
   transition: 1s;
 }
 
-#stage button {
-  width: 5rem;
-  height: 5rem;
+#bouton_stage {
+  width: 8rem;
+  height: 8rem;
   border: none;
   cursor: pointer;
   background-color: #7451eb;
+  border-radius: 50%;
+  background: url(images/kotlin.png);
+  background-size: cover;
 }
 
 #stage_slide {

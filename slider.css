@@ -8,12 +8,12 @@
 }
 
 .veille_slide img {
-  height: 100%;
-  width: 100%;
+  height: 100vh;
+  width: 100vw;
   position: absolute;
   top: 0;
   left: 0;
-  object-fit: cover;
+  object-fit: contain;
   opacity: 0;
   transition: opacity 0.5s;
 }
@@ -23,10 +23,22 @@
 }
 
 .veille_slide button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
   position: absolute;
   z-index: 1;
   top: 0;
   left: 0;
+  height: 3rem;
+  width: 3rem;
+
+  cursor: pointer;
+
+  font-size: 3rem;
+  border: none;
+  background-color: black;
+  color: white;
 }
 
 .suivant,
@@ -36,9 +48,17 @@
   transform: translateY(-50%);
   height: 2rem;
   width: 2rem;
-  background-color: aqua;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 2rem;
   cursor: pointer;
   z-index: 1;
+
+  background-color: white;
+  border: solid 3px black;
+  border-radius: 50%;
 }
 
 .suivant {
@@ -61,12 +81,12 @@
 }
 
 .stage_slide img {
-  height: 100%;
-  width: 100%;
+  height: 100vh;
+  width: 100vw;
   position: absolute;
   top: 0;
   left: 0;
-  object-fit: cover;
+  object-fit: contain;
   opacity: 0;
   transition: opacity 0.5s;
 }
@@ -76,10 +96,22 @@
 }
 
 .stage_slide button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
   position: absolute;
   z-index: 1;
   top: 0;
   left: 0;
+  height: 3rem;
+  width: 3rem;
+
+  cursor: pointer;
+
+  font-size: 3rem;
+  border: none;
+  background-color: black;
+  color: white;
 }
 
 .suivant2,
@@ -89,9 +121,17 @@
   transform: translateY(-50%);
   height: 2rem;
   width: 2rem;
-  background-color: aqua;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 2rem;
   cursor: pointer;
   z-index: 1;
+
+  background-color: white;
+  border: solid 3px black;
+  border-radius: 50%;
 }
 
 .suivant2 {

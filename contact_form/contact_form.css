@@ -1,25 +1,40 @@
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-}
-
-body {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  height: 100vh;
-  background-color: #333;
-}
-
 .contact_form {
   position: relative;
   display: flex;
   justify-content: center;
   align-items: center;
   width: 100%;
-  height: 100%;
-  padding: 20px 100px;
+  background: url(images/sekiro.jpg);
+  height: 0vh;
+  overflow: hidden;
+  transition: 0.8s;
+}
+
+#contact_wrap {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: none;
+  cursor: pointer;
+  background-color: black;
+  color: white;
+  font-size: 1rem;
+  margin-bottom: 1rem;
+  width: 2rem;
+  height: 2rem;
+  border-radius: 50%;
+  transition: 0.5s;
+}
+
+#contact_wrap.active {
+  transform: rotate(180deg);
+  transition: 0.5s;
+}
+
+.contact_form.active {
+  height: 100vh;
+  padding: 20px 50px;
+  transition: 0.8s;
 }
 
 .contact_form::after {
@@ -48,7 +63,7 @@ body {
 
 .left {
   height: 100%;
-  background: url(prog.png) no-repeat center;
+  background: url(images/prog.png) no-repeat center;
   background-size: cover;
 }
 
@@ -57,6 +72,7 @@ body {
 }
 
 h2 {
+  color: black;
   position: relative;
   padding-bottom: 10px;
   margin-bottom: 10px;
@@ -98,7 +114,7 @@ h2:after {
   min-height: 150px;
 }
 
-.btn {
+.contact_form button {
   width: 100%;
   padding: 0.5rem 1rem;
   font-size: 1.1rem;
@@ -110,15 +126,21 @@ h2:after {
   transition: 0.3s;
 }
 
-.btn:hover {
+.contact_form button:hover {
   background-color: #27ae60;
 }
 
 @media screen and (max-width: 880px) {
   .contact_box {
     grid-template-columns: 1fr;
+    margin-top: 20rem;
+    margin-bottom: 20rem;
   }
   .left {
-    height: 200px;
+    height: 100px;
+  }
+
+  .right {
+    color: black;
   }
 }
