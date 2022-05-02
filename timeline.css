@@ -132,14 +132,16 @@
 .verso {
   display: flex;
   flex-direction: column;
-  align-items: flex-end;
+  justify-content: center;
+  align-items: center;
+
   position: absolute;
-  top: 30%;
+  top: 0;
   left: 0;
 
   transform: rotateY(180deg);
   backface-visibility: hidden;
-  height: 150px;
+  height: 100%;
   width: 100%;
 }
 
@@ -147,7 +149,7 @@
   text-align: center;
   width: 100%;
   padding: 0 3px 0 3px;
-  height: 95px;
+  height: fit-content;
   color: rgb(255, 255, 255);
 }
 
@@ -167,17 +169,10 @@
   border-radius: 50%;
   color: white;
 
-  margin-right: 0.4rem;
-}
+  position: absolute;
+  right: 0;
+  bottom: 0;
 
-@media (max-width: 770px) {
-  .verso {
-    top: 20%;
-  }
-}
-
-@media (max-width: 280px) {
-  .verso {
-    top: 10%;
-  }
+  margin-right: 7px;
+  margin-bottom: 7px;
 }
