@@ -148,11 +148,11 @@
   width: 100%;
   padding: 0 3px 0 3px;
   height: 95px;
-  color: white;
+  color: rgb(255, 255, 255);
 }
 
 .verso a {
-  color: blue;
+  color: rgb(255, 217, 0);
 }
 
 .verso button {
@@ -168,4 +168,16 @@
   color: white;
 
   margin-right: 0.4rem;
+}
+
+@media (max-width: 770px) {
+  .verso {
+    top: 20%;
+  }
+}
+
+@media (max-width: 280px) {
+  .verso {
+    top: 10%;
+  }
 }
