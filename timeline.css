@@ -111,6 +111,14 @@
   height: 120px;
 }
 
+.recto h3 {
+  text-align: center;
+}
+
+.recto p {
+  text-align: center;
+}
+
 .recto button {
   display: flex;
   justify-content: center;
