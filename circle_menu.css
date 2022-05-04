@@ -151,7 +151,7 @@ i {
 }
 
 .skills_two li {
-  height: 65px;
+  height: 75px;
   margin: 6px 0 6px 0;
   background-color: rgb(255, 255, 255);
   display: flex;
@@ -226,7 +226,7 @@ i {
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    height: 700px;
+    height: 830px;
   }
 
   #skills_one {
