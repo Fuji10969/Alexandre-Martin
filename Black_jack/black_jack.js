@@ -180,4 +180,45 @@ function ajoutCartePc() {
 Fonction permettant de rafraîchir la page afin de pouvoir rejouer.
 Quand on clique sur le bouton rejouer on fait appel à cette fonction.*/
 
-function reset() {}
+function reset() {
+  player = [];
+  pc = [];
+  oki = 0;
+  toki = 0;
+  addJoueur = 0;
+  addOrdinateur = 0;
+  totalPlayer = [];
+  totalPc = [];
+
+  let carteAleatoireJoueur = random(1, 52);
+  document.getElementById("joueur").innerHTML =
+    '<img src="Black_jack/images_black_jack/' +
+    carteAleatoireJoueur +
+    '.jpg"/>';
+
+  modulo(
+    carteAleatoireJoueur,
+    player,
+    "scorePlayer",
+    "scorePc",
+    oki,
+    addJoueur,
+    totalPlayer
+  );
+
+  let carteAleatoirePc = random(1, 52);
+  document.getElementById("ordinateur").innerHTML =
+    '<img src="Black_jack/images_black_jack/' + carteAleatoirePc + '.jpg"/>';
+  modulo(
+    carteAleatoirePc,
+    pc,
+    "scorePc",
+    "scorePlayer",
+    toki,
+    addOrdinateur,
+    totalPc
+  );
+
+  document.getElementById("carte").disabled = false;
+  document.getElementById("reste").disabled = false;
+}

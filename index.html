@@ -10,6 +10,9 @@
     <link rel="stylesheet" href="background.css" />
     <link rel="stylesheet" href="contact_form.css" />
     <link rel="stylesheet" href="slider.css">
+    <link rel="stylesheet" href="calculatrice.css">
+    <link rel="stylesheet" href="Black_jack/black_jack.css">
+    <link rel="stylesheet" href="morpion/morpion.css">
     <title>Portfolio Alexandre Martin</title>
   </head>
   <body>
@@ -268,18 +271,115 @@
           </div>
           <div class="grid-item" id="grid2"><h3>Calculatrice</h3> <img src="images/calculatrice.jpg"></div>
           <div class="grid-item" id="grid3"><h3>Morpion</h3> <img src="images/morpion.jpg" ></div>
-          <div class="grid-item" id="grid4"><h3>Climb This</h3> <img src="images/climb_up.jpg"></div>
-          <div class="grid-item" id="grid5"><h3>La fleur</h3> <img src="images/fleur.jpg"></div>
-          <div class="grid-item" id="grid6"><h3>OUI</h3> <img src="images/herisson.jpg"></div>
+          <div class="grid-item" id="grid4"><h3>La fleur</h3> <img src="images/fleur.jpg"></div>
+          <div class="grid-item" id="grid5"><h3>Climb This</h3> <img src="images/climb_up.jpg"></div>
+          <div class="grid-item" id="grid6"><h3>Climb This Jee</h3> <img src="images/herisson.jpg"></div>
         </div>
 
         <div class="popup" id="popup">
-          <div id="pop1"><h1>A</h1></div>
-          <div id="pop2"><h1>B</h1></div>
-          <div id="pop3"><h1>C</h1></div>
-          <div id="pop4"><h1>D</h1></div>
-          <div id="pop5"><h1>E</h1></div>
-          <div id="pop6"><h1>F</h1></div>
+          <div id="pop1" class="project">
+
+            <div class="le_jeu">
+              <div class="pc">
+                <h1>BlackJack</h1>
+                <h2>Les cartes de la banque</h2>
+        
+                <div id="ordinateur">
+                  <img src="Black_jack/images_black_jack/1.jpg" />
+                </div>
+                <p>Le score de la banque est : <span id="scorePc"></span></p>
+              </div>
+              <!------------------------------------------------------------------------------------------------->
+              <div class="player">
+                <h2>Vos cartes</h2>
+                <div id="joueur">
+                  <img src="Black_jack/images_black_jack/verso.jpg" />
+                </div>
+                <p>Votre score est de : <span id="scorePlayer"></span></p>
+              </div>
+              <!------------------------------------------------------------------------------------------------->
+              <div id="boutons">
+                <button onclick=" ajoutCarteJoueur();" id="carte">Carte</button>
+                <button onclick=" ajoutCartePc();" id="reste">Reste</button>
+                <button onclick=" reset();">Rejouer</button>
+              </div>
+            </div>
+            
+
+          </div>
+          
+          
+          <div id="pop2"  class="project">
+            <div class="calculator dark">
+              <div class="theme-toggler active">
+                <i class="toggler-icon"></i>
+              </div>
+              <div class="display-screen">
+                <div id="display"></div>
+              </div>
+              <div class="buttons">
+                <table>
+                  <tr>
+                    <td><button class="calculator_button btn-operator" id="clear">C</button></td>
+                    <td><button class="calculator_button btn-operator" id="/">&divide;</button></td>
+                    <td><button class="calculator_button btn-operator" id="*">&times;</button></td>
+                    <td><button class="calculator_button btn-operator" id="backspace"><</button></td>
+                  </tr>
+      
+                  <tr>
+                    <td><button class="calculator_button btn-number"  id="7">7</button></td>
+                    <td><button class="calculator_button btn-number"  id="8">8</button></td>
+                    <td><button class="calculator_button btn-number"  id="9">9</button></td>
+                    <td><button class="calculator_button btn-operator" id="-">-</button></td>
+                  </tr>
+      
+                  <tr>
+                    <td><button class="calculator_button btn-number"  id="4">4</button></td>
+                    <td><button class="calculator_button btn-number"  id="5">5</button></td>
+                    <td><button class="calculator_button btn-number"  id="6">6</button></td>
+                    <td><button class="calculator_button btn-operator" id="+">+</button></td>
+                  </tr>
+      
+                  <tr>
+                    <td><button class="calculator_button btn-number"  id="1">1</button></td>
+                    <td><button class="calculator_button btn-number"  id="2">2</button></td>
+                    <td><button class="calculator_button btn-number"  id="3">3</button></td>
+                    <td rowspan="2">
+                      <button class="calculator_button btn-equal"  id="equal">=</button>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td><button class="calculator_button btn-operator"  id="(">(</button></td>
+                    <td><button class="calculator_button btn-number"  id="0">0</button></td>
+                    <td><button class="calculator_button btn-operator"  id=")">)</button></td>
+                  </tr>
+                </table>
+              </div>
+            </div>
+          </div>
+
+
+          <div id="pop3"  class="project">
+
+            <h4 id="titre_morpion">Morpion</h4>
+    <section id="jeu">
+      <div data-index="0" class="case"></div>
+      <div data-index="1" class="case"></div>
+      <div data-index="2" class="case"></div>
+      <div data-index="3" class="case"></div>
+      <div data-index="4" class="case"></div>
+      <div data-index="5" class="case"></div>
+      <div data-index="6" class="case"></div>
+      <div data-index="7" class="case"></div>
+      <div data-index="8" class="case"></div>
+    </section>
+    <p id="resultat_morpion"></p>
+    <button id="recommencer">Recommencer</button>
+
+          </div>
+          <div id="pop4"  class="project"><h1>D</h1></div>
+          <div id="pop5"  class="project"><h1>E</h1></div>
+          <div id="pop6"  class="project"><h1>Actuellement en travaux</h1></div>
 
           <div id="close"></div>
         </div>
@@ -367,7 +467,10 @@
         <p>Copyright by Alexandre Martin</p>
       </div>
     </footer>
+    
     <script type="text/javascript" src="index.js"></script>
+    <script type="text/javascript" src="morpion/morpion.js"></script>
+    <script type="text/javascript" src="Black_jack/black_jack.js"></script>
     <script
       type="module"
       src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"
