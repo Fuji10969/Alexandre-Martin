@@ -339,8 +339,8 @@ nav img {
   color: black;
   background: white;
 
-  height: 95vh;
-  width: 95vh;
+  height: 320px;
+  width: 320px;
   z-index: 2;
   opacity: 0;
   transition: opacity 0.3s ease;
@@ -368,11 +368,13 @@ nav img {
   transition: opacity 0.3s ease;
   position: absolute;
   margin: auto auto;
-  color: rgb(255, 0, 0);
+
   display: flex;
+  flex-direction: column;
   justify-content: center;
   align-items: center;
-  font-size: 48px;
+  font-size: 12px;
+  text-align: center;
 }
 
 #pop4.show {
@@ -390,11 +392,13 @@ nav img {
   transition: opacity 0.3s ease;
   position: absolute;
   margin: auto auto;
-  color: rgb(0, 255, 208);
+
   display: flex;
+  flex-direction: column;
   justify-content: center;
   align-items: center;
-  font-size: 48px;
+  font-size: 12px;
+  text-align: center;
 }
 
 #pop5.show {
@@ -412,11 +416,13 @@ nav img {
   transition: opacity 0.3s ease;
   position: absolute;
   margin: auto auto;
-  color: rgb(255, 0, 247);
+
   display: flex;
+  flex-direction: column;
   justify-content: center;
   align-items: center;
-  font-size: 48px;
+  font-size: 12px;
+  text-align: center;
 }
 
 #pop6.show {
