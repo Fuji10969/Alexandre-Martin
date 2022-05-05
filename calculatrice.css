@@ -1,7 +1,7 @@
 .calculator {
   z-index: 5;
-  width: 230px;
-  height: 350px;
+  width: 300px;
+  height: 400px;
 
   border-radius: 10px;
   box-shadow: 0 0 30px #000;
@@ -42,15 +42,14 @@
 }
 
 #display {
-  /* margin-top: 1rem; */
-  height: 50px;
-  width: 190px;
+  height: 60px;
+  width: 230px;
   overflow-x: scroll;
   display: flex;
   align-items: flex-end;
   justify-content: flex-start;
   font-size: 30px;
-  /* margin-bottom: 20px; */
+  margin-top: 1.2rem;
 }
 
 /* #display::-webkit-scrollbar {
@@ -66,8 +65,8 @@
 }
 
 .buttons button {
-  height: 35px;
-  width: 35px;
+  height: 45px;
+  width: 45px;
   border: 0;
   border-radius: 30px;
   margin: 5px;
@@ -81,7 +80,7 @@
 }
 
 .buttons button#equal {
-  height: 85px;
+  height: 105px;
 }
 
 /* light theme */
