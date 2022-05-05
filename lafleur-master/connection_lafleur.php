@@ -10,8 +10,8 @@ PDO : interface d'abstraction pour accéder de manière uniforme aux BDD
 //$dsn='mysql:host=*;dbname=*';
 
 $dsn = 'mysql:host=localhost;dbname=basefleur2';
-$user="root";
-$pass="root";
+$user="alexadhfuji10969";
+$pass="4L3x0105";
 
 // instanciation d'un objet PDO
 try {

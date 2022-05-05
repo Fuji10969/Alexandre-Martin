@@ -17,76 +17,66 @@ body {
 } */
 
 .le_jeu {
-  height: 35rem;
-  width: 35rem;
+  height: 350px;
+  width: 350px;
   border-radius: 50%;
-  border: black solid 0.5rem;
-
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
-
+  /* border: green solid 2px; */
   background-color: rgb(255, 255, 255);
-}
-.le_jeu h1 {
-  margin-bottom: 2rem;
 }
 
 .pc {
   display: flex;
   flex-direction: column;
-
   align-items: center;
-  width: 25rem;
+  /* border: green solid 2px; */
 }
 
 .player {
   display: flex;
   flex-direction: column;
-
   align-items: center;
-  width: 25rem;
+
+  margin-top: 2rem;
 }
 
 /********************************************************************/
 #ordinateur {
   display: flex;
-
   justify-content: center;
   align-items: center;
-
-  width: 100%;
 }
 
 #ordinateur img {
-  width: 5rem;
+  width: 3rem;
 }
 
 /********************************************************************/
 
 #joueur {
   display: flex;
-
   justify-content: center;
   align-items: center;
-
-  width: 100%;
 }
 
 #joueur img {
-  width: 5rem;
+  width: 3rem;
+  margin-right: 2px;
+  margin-left: 2px;
 }
 
 /********************************************************************/
 
 #boutons {
-  margin-top: 2rem;
+  margin-top: 1rem;
 }
 
 #boutons button {
-  height: 2rem;
-  width: 5rem;
+  height: 1.5rem;
+  width: 3.5rem;
 }
 
 #boutons button:hover {
