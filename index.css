@@ -432,7 +432,6 @@ nav img {
 #veille_stage {
   height: 100vh;
   width: 100%;
-  background-color: rgb(245, 245, 245);
   overflow: hidden;
   z-index: 1;
 }
@@ -476,7 +475,6 @@ nav img {
   opacity: 0;
   overflow: hidden;
   /* display: none; */
-
   transition: 1s;
 }
 
@@ -575,6 +573,12 @@ nav img {
 #stage.active2 button:nth-child(1) {
   display: none;
 } */
+
+@media screen and (max-width: 1300px) {
+  #veille_stage {
+    height: 100vh;
+  }
+}
 
 /************************************************************************************************************* Footer*/
 footer {
