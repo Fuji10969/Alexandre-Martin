@@ -379,6 +379,7 @@ nav img {
 
 #pop4.show {
   opacity: 1;
+  pointer-events: all;
 }
 
 #pop5 {
