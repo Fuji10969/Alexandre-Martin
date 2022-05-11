@@ -4,6 +4,7 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
 
 body {
@@ -59,24 +60,24 @@ header {
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  text-align: center;
   color: rgb(0, 0, 0);
 }
 #hero h3 {
-  font-size: 1.5rem;
-  font-weight: bolder;
+  font-size: 23px;
+  margin-bottom: 5px;
 }
 
 #hero p {
-  font-size: 2rem;
+  font-size: 30px;
   font-weight: bolder;
   color: white;
 }
 
 #hero p:nth-child(3) {
-  font-size: 1.4rem;
+  margin-top: 5px;
+  font-size: 23px;
   color: black;
-  font-weight: bolder;
-  margin-top: 1.1rem;
 }
 
 #hero button {
@@ -90,6 +91,7 @@ header {
   justify-content: center;
   align-items: center;
 
+  margin-top: 10px;
   transition: 0.4s;
   font-size: 1.5rem;
 }
@@ -109,7 +111,7 @@ nav {
 }
 
 nav a {
-  font-size: 0.8rem;
+  font-size: 18px;
   font-weight: bolder;
   color: white;
   text-decoration: none;
