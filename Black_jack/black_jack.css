@@ -47,6 +47,7 @@ body {
   text-align: center;
 
   width: 250px;
+  height: 40px;
 }
 
 /********************************************************************/
@@ -57,7 +58,9 @@ body {
 }
 
 #ordinateur img {
-  width: 3rem;
+  width: 50px;
+  margin-right: 2px;
+  margin-left: 2px;
 }
 
 /********************************************************************/
@@ -69,7 +72,7 @@ body {
 }
 
 #joueur img {
-  width: 3rem;
+  width: 50px;
   margin-right: 2px;
   margin-left: 2px;
 }
@@ -77,12 +80,12 @@ body {
 /********************************************************************/
 
 #boutons {
-  margin-top: 1rem;
+  margin-top: 15px;
 }
 
 #boutons button {
-  height: 1.5rem;
-  width: 3.5rem;
+  height: 20px;
+  width: 50px;
 }
 
 #boutons button:hover {
