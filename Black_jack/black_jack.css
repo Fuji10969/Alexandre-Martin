@@ -43,6 +43,11 @@ body {
   margin-top: 2rem;
 }
 
+.le_jeu p {
+  text-align: center;
+  width: 300px;
+}
+
 /********************************************************************/
 #ordinateur {
   display: flex;
