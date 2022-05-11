@@ -245,4 +245,11 @@ i {
   #skills_one.active {
     height: 100px;
   }
+
+  #skills_two {
+    align-items: unset;
+  }
+  .skills_two {
+    justify-content: unset;
+  }
 }
