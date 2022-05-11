@@ -9,13 +9,13 @@ PDO : interface d'abstraction pour accéder de manière uniforme aux BDD
 // dsn : data source name : elle définit le driver du système SGBD auquel on veut accéder : syntaxe :
 //$dsn='mysql:host=*;dbname=*';
 
-// $dsn = 'mysql:host=alexadhfuji10969.mysql.db;dbname=alexadhfuji10969';
-// $user='alexadhfuji10969';
-// $pass='4L3x0105';
+$dsn = 'mysql:host=alexadhfuji10969.mysql.db;dbname=alexadhfuji10969';
+$user='alexadhfuji10969';
+$pass='4L3x0105';
 
 // instanciation d'un objet PDO
 try {
-	$db = new PDO('mysql:host=alexadhfuji10969.mysql.db;port=21;dbname=alexadhfuji10969', 'alexadhfuji10969', '4L3x0105');
+	$db = new PDO('127.0.0.1:host=alexadhfuji10969.mysql.db;port=3306;dbname=alexadhfuji10969','alexadhfuji10969','4L3x0105',array(PDO::MYSQL_ATTR_INIT_COMMAND => 'SET NAMES utf8'));
 	//echo "vous etes connecté à : jpglocal2019";
 	$db->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
 	//forcer utf8

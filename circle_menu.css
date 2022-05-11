@@ -21,12 +21,14 @@
 
 #menu li {
   position: absolute;
-  margin-right: 13rem;
   list-style: none;
+
+  margin-right: 208px;
 
   transform-origin: 130px;
   transition: 0.6s;
   transform: rotate(0deg) translateX(105px);
+  /* border: solid red 3px; */
 }
 
 #menu li button {
@@ -157,7 +159,7 @@ i {
 }
 
 .skills_two li {
-  height: 75px;
+  height: 45px;
   margin: 6px 0 6px 0;
   background-color: rgb(255, 255, 255);
   display: flex;
