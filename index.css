@@ -340,8 +340,8 @@ nav img {
   color: black;
   background: white;
 
-  height: 320px;
-  width: 320px;
+  height: 550px;
+  width: 550px;
   z-index: 2;
   opacity: 0;
   transition: opacity 0.3s ease;
@@ -434,6 +434,13 @@ nav img {
 #close {
   height: 100%;
   width: 100%;
+}
+
+@media screen and (max-width: 580px) {
+  #pop3 {
+    height: 350px;
+    width: 350px;
+  }
 }
 
 /*************************************************************************************************************Veille et Stage*/
