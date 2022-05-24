@@ -1,4 +1,4 @@
-<div class="jumbotron green-bkg text-dark h-100">
+<div id="liste_produit">
 <?php 
 include "connection_lafleur.php";
 // require "model_lafleur.php";
@@ -46,10 +46,10 @@ if (isset($_GET['categ'])) {
 // affichage du tableau produits :
 if ( isset($cat) ) { ?>
 
-	<h2 class='rose'><?= $categ ?></h2>
+	<h2 ><?= $categ ?></h2>
 
-	<table class='table table-striped table-light table-bordered'>
-		<thead class='thead-light'>
+	<table >
+		<thead >
 			<tr>
 				<th>image</th>
 				<th>ref</th>
@@ -73,7 +73,7 @@ if ( isset($cat) ) { ?>
 	<!-- //form -->
 			<form action="panier.php" method="get">
 	<!-- select > envoi de la variable GET : "refPdt" -->
-				<select name="refPdt" size="1" class="custom-select">';
+				<select name="refPdt"  >';
 	<!-- Remplissage de la liste déroulante à partir de la base de données. -->
 				<?php foreach ($cat as $line) : ?>
 					<option>
@@ -82,11 +82,11 @@ if ( isset($cat) ) { ?>
 				<?php endforeach; ?>
 				</select>
 <!-- input > envoi de la variable GET : "quantite" -->
-	<label for="Quantité :" class="m-2">Quantité :</label>
-		<input type="text" name="quantite" size="1" value="1" class="form-control col-md-2"/>
+	<label for="Quantité :" >Quantité :</label>
+		<input type="text" name="quantite"  value="1" />
 <!-- input > envoi de la variable GET : "action" -->
 	<p>
-		<input type="submit" name="action" value="Ajouter au panier" class="btn btn-info mt-2"/>
+		<input type="submit" name="action" value="Ajouter au panier" />
 	</p>
 			</form>
 <?php

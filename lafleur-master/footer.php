@@ -1,4 +1,4 @@
-    <footer class="text-center">
+    <footer >
     © Lafleur SA
     </footer>
     </body>

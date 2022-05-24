@@ -176,6 +176,7 @@ i {
   border-left: solid #7451eb 10px;
 }
 
+/* 
 .level_skill_case {
   display: flex;
 }
@@ -191,7 +192,7 @@ i {
 .level_skill_case .level_skill:first-child {
   margin-left: 1rem;
   background-color: rgb(255, 0, 0);
-}
+} */
 
 #skills_two_1.active {
   opacity: 1;

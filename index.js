@@ -96,7 +96,6 @@ function skill(a) {
     document.querySelector("#skills_two_8").classList.remove("active");
     document.querySelector("#skills_two_1").classList.add("active");
   }
-
   if (a == "s2") {
     document.querySelector("#skills_two_1").classList.remove("active");
     document.querySelector("#skills_two_3").classList.remove("active");
@@ -157,7 +156,6 @@ function skill(a) {
     document.querySelector("#skills_two_8").classList.remove("active");
     document.querySelector("#skills_two_7").classList.add("active");
   }
-
   if (a == "s8") {
     document.querySelector("#skills_two_1").classList.remove("active");
     document.querySelector("#skills_two_2").classList.remove("active");

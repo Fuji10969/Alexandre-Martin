@@ -46,7 +46,7 @@ if (isset($_GET["action"]) or isset($_GET["vider"])) {
 	header("Location:" .$_SERVER['HTTP_REFERER']);
 }
 
-echo "<table class='table table-striped table-light table-bordered table-sm'>
+echo "<table class='tableau_panier'>
 	<thead class='thead-light'>
 		<th class='small'>Ref</th>
 		<th class='small'>Désignation</th>
@@ -103,7 +103,7 @@ for ($i = 0; $i < count($_SESSION["reference"]); $i++) {
 
 
 <tr>
-	<td colspan='4'>Total :</td>
+	<td >Total :</td>
 	<td>
 		<?php echo $total; ?>
 	</td>

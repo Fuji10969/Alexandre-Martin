@@ -67,13 +67,13 @@ if ($clientNom) {
 	}
 
 // init de la variable de session pour afficher message de confirmation sur la page commande
-	$_SESSION['showEnvoi'] = "<div class='green'>Bonjour Mr <strong>".implode($clientNom)."</strong><br>Votre commande a bien été enregistrée sous la référence : ".$clientCode.$date->getTimestamp()."<p>
-		<a class='btn btn-success mt-2' href = 'index.php'>retour au site</a>
+	$_SESSION['showEnvoi'] = "<div >Bonjour Mr <strong>".implode($clientNom)."</strong><br>Votre commande a bien été enregistrée sous la référence : ".$clientCode.$date->getTimestamp()."<p>
+		<a  href = 'index.php'>retour au site</a>
 	</p></div>";
 
 } else {
 // init de la variable de session pour afficher message d'erreur sur la page commande
-	$_SESSION['showEnvoi'] = "<div class='red'>mauvais code client ou mot de passe<br>Veuillez re-saisir vos identifiants</div>";
+	$_SESSION['showEnvoi'] = "<div >mauvais code client ou mot de passe<br>Veuillez re-saisir vos identifiants</div>";
 }
 // afficher la commande 2 : La requête "recapCommandes" vous permettra de vérifier les données enregistrées dans la base :
 	$sql2 ="SELECT clientConnu.clt_nom, clientConnu.clt_code, commande.cde_moment, contenir.produit, 

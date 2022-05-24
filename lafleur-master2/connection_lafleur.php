@@ -9,7 +9,7 @@ PDO : interface d'abstraction pour accéder de manière uniforme aux BDD
 
 // instanciation d'un objet PDO
 try {
-	$db= new PDO('mysql:host=alexadhfuji10969.mysql.db;dbname=alexadhfuji10969;charset=utf8', 'alexadhfuji10969', '4L3x0105', array(PDO::MYSQL_ATTR_INIT_COMMAND => 'SET NAMES utf8'));
+	$db= new PDO('mysql:=localhost;dbname=basefleur2;charset=utf8', 'root', 'root', array(PDO::MYSQL_ATTR_INIT_COMMAND => 'SET NAMES utf8'));
 	
 	$db->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
 	//forcer utf8

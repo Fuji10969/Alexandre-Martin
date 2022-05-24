@@ -1,13 +1,39 @@
 <?php include_once "header.php" ?>
-
-<main class="container-fluid">
-	<div class="row">
-		<section class="col-4 pr-0">
+<main>
+	<div id="la_page">
+		<section >
 			<?php require "menu.php" ?>
 		</section>
-		<section class="col-8 pl-0">
+		<section >
 			<?php require "listePdt.php" ?>
 		</section>
-	</div>
+
+		</div>
+
+
+<div id="panier_commande">
+<?php
+if (isset($_SESSION['reference']) and count($_SESSION['reference'])>=1) {
+	include'panier.php'; ?>
+	
+	<form action='panier.php' method='get'>
+	<input type='submit' name='vider' value='Vider le panier' />
+	</form>
+	
+	<form method='get'>
+	<input type='submit' name='commande' value='Commander' />
+	</form>
+<?php
+}
+?>
+
+</div>
+
+
 </main>
+
+
+	
+
+
 <?php require "footer.php" ?>
